@@ -12,6 +12,5 @@ public class Figur {
         Blau:J = rgb(0,0,255) #0000FF hsl(240,100%,50%)
         Violett: T = rgb(238,130,238) #EE82EE hsl(300,76%,72%)
         Zyan:  I = rgb(0,255,255) #00FFFF hsl(180,100%,50%)
-
      */
 }

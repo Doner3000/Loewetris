@@ -57,7 +57,16 @@ public class SceneManager {
         controllerMap.put(sceneKey, controller);
     }
 
+    public void showScene(String scenekey){
+        Scene scene = sceneMap.get(scenekey);
+        ersteStage.setScene(scene);
+        ersteStage.show();
+    }
+
     public void setPrimaryStage(Stage ersteStage){
         this.ersteStage = ersteStage;
+    }
+    public Object getController(String sceneKey){
+        return controllerMap.get(sceneKey);
     }
 }
