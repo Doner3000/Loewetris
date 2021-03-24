@@ -10,16 +10,10 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class SceneManager {
-    private static final String FXML_PATH = "fxml/";
-    public static final String START_SCENE = "startScene.fxml";
-    public static final String REGELN_SCENE = "regelnScene.fxml";
-    public static final String SPIEL_SCENE = "spielScreen.fxml";
-    public static final String GAMEOVER_SCENE = "gameoverScene.fxml";
-    public static final String ABOUT_SCENE = "aboutScene.fxml";
     private Stage ersteStage;
 
-    private final Map<String, Scene> sceneMap = new HashMap<>();
-    private final Map<String, Object> controllerMap = new HashMap<>();
+    private final Map<SceneEnum, Scene> sceneMap = new HashMap<SceneEnum, Scene>();
+    private final Map<SceneEnum, Object> controllerMap = new HashMap<>();
 
     private static SceneManager instance;
 
@@ -41,15 +35,14 @@ public class SceneManager {
     }
 
     public void initScenes() throws IOException{
-        loadScene(START_SCENE);
-        loadScene(REGELN_SCENE);
-        loadScene(SPIEL_SCENE);
-        loadScene(GAMEOVER_SCENE);
+        for (SceneEnum value : SceneEnum.values()){
+            loadScene(value);
+        }
     }
 
-    private void loadScene(String sceneKey) throws IOException{
+    private void loadScene(SceneEnum sceneKey) throws IOException{
         FXMLLoader fxmlLoader = new FXMLLoader();
-        fxmlLoader.setLocation(getClass().getClassLoader().getResource(FXML_PATH + sceneKey));
+        fxmlLoader.setLocation(getClass().getClassLoader().getResource(sceneKey.getFullPath()));
         Parent root = fxmlLoader.load();
         Scene scene = new Scene(root);
         Object controller = fxmlLoader.getController();
@@ -58,7 +51,7 @@ public class SceneManager {
         controllerMap.put(sceneKey, controller);
     }
 
-    public void showScene(String scenekey){
+    public void showScene(SceneEnum scenekey){
         Scene scene = sceneMap.get(scenekey);
         ersteStage.setScene(scene);
         ersteStage.show();

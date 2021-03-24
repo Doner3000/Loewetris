@@ -14,6 +14,6 @@ public class Spiel extends Application{
         sceneManager.setPrimaryStage(ersteStage);
         System.out.println("Laden erfolgreich");
 
-        sceneManager.showScene(SceneManager.START_SCENE);
+        sceneManager.showScene(SceneEnum.START_SCENE);
     }
 }
