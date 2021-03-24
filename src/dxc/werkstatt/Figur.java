@@ -5,6 +5,7 @@ public class Figur {
     private int id;
 
     /*
+
         Orange: L = rgb(255,165,0) #FFA500 hsl(39,100%,50%)
         Gelb: O = rgb(255,255,0) #FFFF00 hsl(60,100%,50%)
         Grün:  S = rgb(0,128,0) #008000 hsl(120,100%,25%)
