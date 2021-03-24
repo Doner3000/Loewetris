@@ -5,8 +5,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class Spiel {
-    private int highscore;
+public class Spiel extends Application{
 
     public void start(Stage ersteStage) throws IOException {
         System.out.println("App startet...");

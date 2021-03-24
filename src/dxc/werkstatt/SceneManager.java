@@ -15,6 +15,7 @@ public class SceneManager {
     public static final String REGELN_SCENE = "regelnScene.fxml";
     public static final String SPIEL_SCENE = "spielScene.fxml";
     public static final String GAMEOVER_SCENE = "gameoverScene.fxml";
+    public static final String ABOUT_SCENE = "aboutScene.fxml";
     private Stage ersteStage;
 
     private final Map<String, Scene> sceneMap = new HashMap<>();

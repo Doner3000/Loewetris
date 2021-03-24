@@ -2,8 +2,12 @@ package dxc.werkstatt;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.layout.Pane;
 
-public class SceneController {
+public class StartSceneController {
+
+    @FXML
+    private Pane startScreenPane;
 
     @FXML
     private Button startButton;
@@ -15,4 +19,3 @@ public class SceneController {
     private Button aboutButton;
 
 }
-
