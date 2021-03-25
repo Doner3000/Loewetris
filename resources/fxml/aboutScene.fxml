@@ -8,6 +8,6 @@
    <children>
       <TextField fx:id="aboutSceneTitle" alignment="CENTER" layoutX="226.0" layoutY="14.0" text="About" />
       <TextField fx:id="aboutSceneCopyright" layoutX="226.0" layoutY="336.0" text="© 3pTeam" />
-      <Button fx:id="btnAboutBack" onAction=""/>
+      <Button fx:id="btnAboutBack" onAction="#btnBackPressed"/>
    </children>
 </Pane>
