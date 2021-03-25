@@ -7,7 +7,7 @@
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="647.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dxc.werkstatt.RegelController">
    <children>
       <Button layoutX="241.0" layoutY="563.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="118.0" text="Zurück" onAction="#btnBackPressed"/>
-      <TextArea layoutX="59.0" layoutY="239.0" prefHeight="305.0" prefWidth="483.0" />
+      <TextArea layoutX="59.0" layoutY="239.0" prefHeight="305.0" prefWidth="483.0" text="Löwen dürfen nicht spielen"/>
       <Label layoutX="268.0" layoutY="212.0" prefHeight="17.0" prefWidth="64.0" text="Regeln">
          <font>
             <Font size="18.0" />
