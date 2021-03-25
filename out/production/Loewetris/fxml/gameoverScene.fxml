@@ -6,7 +6,7 @@
 <?import javafx.scene.text.Font?>
 
 
-<Pane fx:id="labelGameoverScene" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dxc.werkstatt.GameoverController">
+<Pane fx:id="labelGameoverScene" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dxc.werkstatt.GameoverController" style="-fx-background-color: orange;">
    <children>
       <Label fx:id="GameoverSceneLabel" layoutX="181.0" layoutY="65.0" text="Game Over">
          <font>
