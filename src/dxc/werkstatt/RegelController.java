@@ -32,13 +32,4 @@ public class RegelController {
     @FXML
     private Button regelsceneback;
 
-    @FXML
-    void initialize() {
-        assert regelscenepane != null : "fx:id=\"regelscenepane\" was not injected: check your FXML file 'Untitled'.";
-        assert regelscenepng != null : "fx:id=\"regelscenepng\" was not injected: check your FXML file 'Untitled'.";
-        assert regelscenelabel != null : "fx:id=\"regelscenelabel\" was not injected: check your FXML file 'Untitled'.";
-        assert regelscenetxt != null : "fx:id=\"regelscenetxt\" was not injected: check your FXML file 'Untitled'.";
-        assert regelsceneback != null : "fx:id=\"regelsceneback\" was not injected: check your FXML file 'Untitled'.";
-
-    }
 }
