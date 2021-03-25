@@ -38,7 +38,6 @@ public class SceneManager {
         for (SceneEnum value : SceneEnum.values()){
             loadScene(value);
         }
-        //lol
     }
 
     private void loadScene(SceneEnum sceneKey) throws IOException{
