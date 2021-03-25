@@ -8,5 +8,9 @@
       <Label fx:id="lblTitelAboutScene" alignment="CENTER" layoutX="284.0" layoutY="17.0" text="About" />
       <Label fx:id="lblCopyright" layoutX="260.0" layoutY="340.0" text="© 3pTeam" />
       <Button fx:id="btnBackAboutScene" onAction="#btnBackPressed" layoutX="272.0" layoutY="300.00" text="Back"/>
+      <Label layoutX="100.0" layoutY="100.00" prefHeight="20.0" prefWidth="Infinity" text="Danke...es freut uns sehr dass sich jemand für unser Spiel interessiert!"/>
+      <Label layoutX="100.0" layoutY="120.00" prefHeight="20.0" prefWidth="Infinity" text="Dieses Spiel wurde im Rahmen der Invasion der Löwen erstellt :D"/>
+      <Label layoutX="100.0" layoutY="140.00" prefHeight="20.0" prefWidth="Infinity" text="Ob wir von einem Löwen erpresst werden? "/>
+      <Label layoutX="100.0" layoutY="160.00" prefHeight="20.0" prefWidth="Infinity" text="Weiß der Geier oder weiß er nicht ^^"/>
    </children>
 </Pane>
