@@ -4,6 +4,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.layout.Pane;
 
 public class StartSceneController {
@@ -19,6 +20,9 @@ public class StartSceneController {
 
     @FXML
     private Button btnAboutStartScene;
+
+    @FXML
+    private Label lblFilledHighScore;
 
     @FXML
     void btnStartPressed(ActionEvent event)
@@ -37,4 +41,6 @@ public class StartSceneController {
     {
         SceneManager.getInstance().showScene(SceneEnum.ABOUT_SCENE);
     }
+
+
 }
