@@ -5,8 +5,8 @@
 
 <Pane id="start" fx:id="startScreenPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dxc.werkstatt.StartSceneController">
    <children>
-      <Button fx:id="startButton" layoutX="280.0" layoutY="222.0" mnemonicParsing="false" text="Start" />
-      <Button fx:id="regelnButton" layoutX="274.0" layoutY="256.0" mnemonicParsing="false" text="Regeln" />
-      <Button fx:id="aboutButton" layoutX="276.0" layoutY="293.0" mnemonicParsing="false" text="About" />
+      <Button fx:id="btnStartStartScene" layoutX="280.0" layoutY="222.0" mnemonicParsing="false" text="Start" onAction="#btnStartPressed"/>
+      <Button fx:id="btnRegelnStartScene" layoutX="274.0" layoutY="256.0" mnemonicParsing="false" text="Regeln" onAction="#btnRegelnPressed"/>
+      <Button fx:id="btnAboutStartScene" layoutX="276.0" layoutY="293.0" mnemonicParsing="false" text="About" onAction="#btnAboutPressed"/>
    </children>
 </Pane>
