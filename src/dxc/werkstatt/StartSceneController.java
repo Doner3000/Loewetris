@@ -1,6 +1,8 @@
 package dxc.werkstatt;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.layout.Pane;
 
@@ -10,12 +12,29 @@ public class StartSceneController {
     private Pane startScreenPane;
 
     @FXML
-    private Button startButton;
+    private Button btnStartStartScene;
 
     @FXML
-    private Button regelnButton;
+    private Button btnRegelnStartScene;
 
     @FXML
-    private Button aboutButton;
+    private Button btnAboutStartScene;
 
+    @FXML
+    void btnStartPressed(ActionEvent event)
+    {
+        SceneManager.getInstance().showScene(SceneEnum.SPIEL_SCENE);
+    }
+
+    @FXML
+    void btnRegelnPressed(ActionEvent event)
+    {
+        SceneManager.getInstance().showScene(SceneEnum.REGELN_SCENE);
+    }
+
+    @FXML
+    void btnAboutPressed(ActionEvent event)
+    {
+        SceneManager.getInstance().showScene(SceneEnum.ABOUT_SCENE);
+    }
 }

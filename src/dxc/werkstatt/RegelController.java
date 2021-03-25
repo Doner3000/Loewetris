@@ -30,6 +30,11 @@ public class RegelController {
     private TextArea regelscenetxt;
 
     @FXML
-    private Button regelsceneback;
+    private Button btnZurueckRegelnScene;
 
+    @FXML
+    void btnBackPressed(ActionEvent event)
+    {
+        SceneManager.getInstance().showScene(SceneEnum.START_SCENE);
+    }
 }
