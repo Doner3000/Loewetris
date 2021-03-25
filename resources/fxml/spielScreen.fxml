@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.TextField?>
-<?import javafx.scene.layout.Pane?>
-
+<?import javafx.scene.canvas.Canvas?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<Pane fx:id="paneSpielScene" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dxc.werkstatt.SpielController" style="-fx-background-color: orange;">
-    <children>
-        <Label fx:id="lblTitelSpielScene" alignment="CENTER" layoutX="260.0" layoutY="14.0" text="Spiel spielen" />
+<?import javafx.scene.layout.Pane?>
 
-        <Button fx:id="btnBackSpielScene" onAction="#btnBackPressed" layoutX="270.0" layoutY="336.0" text="Back" />
+<Pane fx:id="paneSpielScene" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dxc.werkstatt.SpielController">
+    <children>
+        <Label fx:id="lblTitelSpielScene" alignment="CENTER" layoutX="317.0" layoutY="34.0" text="Spiel spielen" />
+
+        <Button fx:id="btnBackSpielScene" layoutX="330.0" layoutY="704.0" onAction="#btnBackPressed" text="Back" />
+      <Canvas height="600.0" layoutX="200.0" layoutY="80.0" width="300.0" />
     </children>
 </Pane>
