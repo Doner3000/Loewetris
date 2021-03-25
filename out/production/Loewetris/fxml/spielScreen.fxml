@@ -10,6 +10,6 @@
         <Label fx:id="lblTitelSpielScene" alignment="CENTER" layoutX="317.0" layoutY="34.0" text="Spiel spielen" />
 
         <Button fx:id="btnBackSpielScene" layoutX="330.0" layoutY="704.0" onAction="#btnBackPressed" text="Back" />
-      <Canvas height="600.0" layoutX="200.0" layoutY="80.0" width="300.0" />
+      <Canvas fx:id="canvasSpielScene" height="600.0" layoutX="200.0" layoutY="80.0" width="300.0" />
     </children>
 </Pane>
