@@ -4,10 +4,11 @@
 <?import javafx.scene.layout.Pane?>
 
 <?import javafx.scene.control.Button?>
-<Pane fx:id="aboutScenePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dxc.werkstatt.SpielController">
+<?import javafx.scene.control.Label?>
+<Pane fx:id="paneSpielScene" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dxc.werkstatt.SpielController">
     <children>
-        <TextField fx:id="aboutSceneTitle" alignment="CENTER" layoutX="226.0" layoutY="14.0" text="Spiel spielen" />
-        <TextField fx:id="aboutSceneCopyright" layoutX="226.0" layoutY="336.0" text="© 3pTeam" />
+        <Label fx:id="lblTitelSpielScene" alignment="CENTER" layoutX="226.0" layoutY="14.0" text="Spiel spielen" />
+        <Label fx:id="lblCopyright" layoutX="226.0" layoutY="336.0" text="© 3pTeam" />
         <Button fx:id="btnBackSpielScene" onAction="#btnBackPressed"/>
     </children>
 </Pane>
