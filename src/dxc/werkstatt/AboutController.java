@@ -4,6 +4,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.Pane;
 
@@ -13,10 +14,10 @@ public class AboutController {
     private Pane aboutScenePane;
 
     @FXML
-    private TextField aboutSceneTitle;
+    private Label lblTitelAboutScene;
 
     @FXML
-    private TextField aboutSceneCopyright;
+    private Label lblCopyright;
 
     @FXML
     private Button btnBackAboutScene;
