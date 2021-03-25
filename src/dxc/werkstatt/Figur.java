@@ -1,9 +1,44 @@
 package dxc.werkstatt;
 
-public class Figur {
-    private String farbe;
-    private int id;
 
+import javafx.scene.canvas.Canvas;
+
+import java.time.LocalTime;
+
+public class Figur {
+    double height;
+    double width;
+
+    public Figur(){
+        super();
+    }
+
+    public double getHeight() {
+        return height;
+    }
+
+    public void setHeight(double height) {
+        this.height = height;
+    }
+
+    public double getWidth() {
+        return width;
+    }
+
+    public void setWidth(double width) {
+        this.width = width;
+    }
+
+/*    public void moveDown(Canvas xSpielCanvas){
+        int aktuelleZeit = LocalTime.now().getNano();
+        while(this.getHeight() < 600){
+            int vergleichendeZeit = 59; //LocalTime.now().getNano();
+            if(vergleichendeZeit != aktuelleZeit){
+                setHeight(this.getHeight() + 30);
+            }
+        }
+    }
+*/
     /*
 
         Orange: orangeBlock = rgb(255,165,0) #FFA500 hsl(39,100%,50%)
