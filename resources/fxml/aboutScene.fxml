@@ -3,14 +3,24 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
+<?import javafx.scene.text.Font?>
 <Pane fx:id="aboutScenePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dxc.werkstatt.AboutController" style="-fx-background-color: orange;">
    <children>
-      <Label fx:id="lblTitelAboutScene" alignment="CENTER" layoutX="284.0" layoutY="17.0" text="About" />
+      <Label fx:id="lblTitelAboutScene" alignment="CENTER" layoutX="264.0" layoutY="17.0" text="About" style="-fx-text-fill: blue">
+         <font>
+            <Font size="35"></Font>
+         </font>
+      </Label>
       <Label fx:id="lblCopyright" layoutX="260.0" layoutY="340.0" text="© 3pTeam" />
       <Button fx:id="btnBackAboutScene" onAction="#btnBackPressed" layoutX="272.0" layoutY="300.00" text="Back"/>
-      <Label layoutX="100.0" layoutY="100.00" prefHeight="20.0" prefWidth="Infinity" text="Danke...es freut uns sehr dass sich jemand für unser Spiel interessiert!"/>
-      <Label layoutX="100.0" layoutY="120.00" prefHeight="20.0" prefWidth="Infinity" text="Dieses Spiel wurde im Rahmen der Invasion der Löwen erstellt :D"/>
-      <Label layoutX="100.0" layoutY="140.00" prefHeight="20.0" prefWidth="Infinity" text="Ob wir von einem Löwen erpresst werden? "/>
-      <Label layoutX="100.0" layoutY="160.00" prefHeight="20.0" prefWidth="Infinity" text="Weiß der Geier oder weiß er nicht ^^"/>
+      <Label layoutX="270.0" layoutY="100.00" prefHeight="20.0" prefWidth="Infinity" text="Danke!" style="-fx-text-fill: blue">
+         <font>
+            <Font size="20"></Font>
+         </font>
+      </Label>
+      <Label layoutX="140.0" layoutY="130.00" prefHeight="20.0" prefWidth="Infinity" text="Es freut uns sehr dass sich jemand für unser Spiel interessiert!"/>
+      <Label layoutX="140.0" layoutY="150.00" prefHeight="20.0" prefWidth="Infinity" text="Dieses Spiel wurde im Rahmen der Invasion der Löwen erstellt :D"/>
+      <Label layoutX="140.0" layoutY="170.00" prefHeight="20.0" prefWidth="Infinity" text="Ob wir von einem Löwen erpresst werden? "/>
+      <Label layoutX="140.0" layoutY="190.00" prefHeight="20.0" prefWidth="Infinity" text="Weiß der Geier oder weiß er nicht ^^"/>
    </children>
 </Pane>

@@ -3,10 +3,24 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.layout.Pane?>
 
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.text.Font?>
 <Pane id="start" fx:id="startScreenPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dxc.werkstatt.StartSceneController" style="-fx-background-color: orange;">
    <children>
       <Button fx:id="btnStartStartScene" layoutX="280.0" layoutY="222.0" mnemonicParsing="false" text="Start" onAction="#btnStartPressed" />
       <Button fx:id="btnRegelnStartScene" layoutX="274.0" layoutY="256.0" mnemonicParsing="false" text="Regeln" onAction="#btnRegelnPressed"/>
       <Button fx:id="btnAboutStartScene" layoutX="276.0" layoutY="293.0" mnemonicParsing="false" text="About" onAction="#btnAboutPressed"/>
+      <Label layoutX="28.0" layoutY="50" text="Willkommen zu Löwetris" style="-fx-text-fill: blue">
+         <font>
+            <Font size="50"/>
+         </font>
+      </Label>
+      <Label layoutX="175.0" layoutY="155.0" text="Zum Starten Start drücken!" style="-fx-text-fill: blue">
+              <font>
+                 <Font size="20" />
+              </font>
+      </Label>
+      <Label fx:id="lblHighScore" text="Highscore: " layoutX="200" layoutY="350" style="-fx-text-fill: blue"></Label>
+      <Label fx:id="lblFilledHighScore" text="Sobald einmal gespielt wurde steht hier der Highscore" layoutX="260" layoutY="350" style="-fx-text-fill: blue"></Label>
    </children>
 </Pane>
