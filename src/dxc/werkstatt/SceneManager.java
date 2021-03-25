@@ -12,7 +12,7 @@ import java.util.Map;
 public class SceneManager {
     private Stage ersteStage;
 
-    private final Map<SceneEnum, Scene> sceneMap = new HashMap<SceneEnum, Scene>();
+    private final Map<SceneEnum, Scene> sceneMap = new HashMap<>();
     private final Map<SceneEnum, Object> controllerMap = new HashMap<>();
 
     private static SceneManager instance;

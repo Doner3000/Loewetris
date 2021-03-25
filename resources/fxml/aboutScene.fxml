@@ -7,6 +7,6 @@
    <children>
       <Label fx:id="lblTitelAboutScene" alignment="CENTER" layoutX="284.0" layoutY="17.0" text="About" />
       <Label fx:id="lblCopyright" layoutX="260.0" layoutY="340.0" text="© 3pTeam" />
-      <Button fx:id="btnBackAboutScene" onAction="#btnBackPressed" />
+      <Button fx:id="btnBackAboutScene" onAction="#btnBackPressed" layoutX="272.0" layoutY="300.00" text="Back"/>
    </children>
 </Pane>
