@@ -15,5 +15,6 @@ public class Spiel extends Application{
         System.out.println("Laden erfolgreich");
 
         sceneManager.showScene(SceneEnum.START_SCENE);
+
     }
 }

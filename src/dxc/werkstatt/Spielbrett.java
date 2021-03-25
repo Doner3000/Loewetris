@@ -18,6 +18,6 @@ public class Spielbrett {
         Color c = Color.rgb(0,255,255);
 
         canvas.getGraphicsContext2D().setStroke(c);
-        canvas.getGraphicsContext2D().strokeRect(width, height, 30, 30);
+        canvas.getGraphicsContext2D().strokeRect(width, height, 120, 120);
     }
 }
