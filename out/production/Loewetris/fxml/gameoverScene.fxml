@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<Pane fx:id="labelGameoverScene" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dxc.werkstatt.GameoverController">
+   <children>
+      <Label fx:id="GameoverSceneLabel" layoutX="181.0" layoutY="65.0" text="Game Over">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Label>
+      <Label fx:id="gameoverSceneLabelHighscore" layoutX="175.0" layoutY="160.0" prefHeight="27.0" prefWidth="106.0" text="Highscore:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="gameoverSceneLabelScore" layoutX="175.0" layoutY="193.0" prefHeight="27.0" prefWidth="95.0" text="Score:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnRestartGameOverScene" layoutX="254.0" layoutY="265.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="91.0" text="Erneut spielen" onAction="#btnRestartPressed"/>
+      <Button fx:id="btnBeendenGameOverScene" layoutX="268.0" layoutY="328.0" mnemonicParsing="false" text="Beenden" onAction="#btnBeendenPressed"/>
+   </children>
+</Pane>
