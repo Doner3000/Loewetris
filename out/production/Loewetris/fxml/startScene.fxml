@@ -21,7 +21,7 @@
               </font>
       </Label>
       <Label text="Highscore: " layoutX="265" layoutY="350" style="-fx-text-fill: blue"/>
-      <Label fx:id="lblFilledHighScore" text="Hier wird der Highscore stehen" layoutX="325" layoutY="350"
+      <Label fx:id="lblFilledHighScore" text="0" layoutX="325" layoutY="350"
              style="-fx-text-fill: blue"/>
    </children>
 </Pane>
