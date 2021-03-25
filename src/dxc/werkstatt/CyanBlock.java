@@ -21,7 +21,7 @@ public class CyanBlock extends Figur {
     canvasSpielScene.getGraphicsContext2D().fillRect(width, height, 120, 30);
 }
 
-    public void moveDown(Canvas xSpielCanvas){
+    /*public void moveDown(Canvas xSpielCanvas){
         int aktuelleZeit = 1;
         double height3 = 0;
         while(height3 < 600){
@@ -32,5 +32,5 @@ public class CyanBlock extends Figur {
                 e.drawCyanBlock(xSpielCanvas);
             }
         }
-    }
+    }*/
 }

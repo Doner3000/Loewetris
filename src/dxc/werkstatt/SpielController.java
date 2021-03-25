@@ -52,7 +52,7 @@ public class SpielController {
 //        Pascal.drawYellowBlock(canvasSpielScene);
         CyanBlock test = new CyanBlock(90,0);
         test.drawCyanBlock(canvasSpielScene);
-        test.moveDown(canvasSpielScene);
+        //test.moveDown(canvasSpielScene);
     }
 }
 
