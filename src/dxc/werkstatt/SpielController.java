@@ -1,5 +1,6 @@
 package dxc.werkstatt;
 
+import javafx.animation.AnimationTimer;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.Scene;
@@ -10,6 +11,8 @@ import javafx.scene.control.Label;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
+
+import java.util.Timer;
 
 import static javafx.scene.paint.Color.*;
 
@@ -40,7 +43,7 @@ public class SpielController {
 
 
     @FXML
-    private void initialize(){
+    private void initialize() throws InterruptedException {
 //        CyanBlock.drawCyanBlock(canvasSpielScene);
 //        RedBlock.drawRedBlock(canvasSpielScene);
 //        GreenBlock.drawGreenBlock(canvasSpielScene);
@@ -50,8 +53,8 @@ public class SpielController {
 //        YellowBlock.drawYellowBlock(canvasSpielScene);
 //        YellowBlock Pascal = new YellowBlock(120, 0, 30);
 //        Pascal.drawYellowBlock(canvasSpielScene);
-        CyanBlock test = new CyanBlock(90,0);
-        test.drawCyanBlock(canvasSpielScene);
+        CanvasAnimationTimer ant = new CanvasAnimationTimer(canvasSpielScene);
+        ant.start();
         //test.moveDown(canvasSpielScene);
     }
 }

@@ -3,31 +3,24 @@ package dxc.werkstatt;
 
 import javafx.scene.canvas.Canvas;
 
-import java.time.LocalTime;
-
 public class Figur {
-    double height;
-    double width;
+    Block block1;
+    Block block2;
+    Block block3;
+    Block block4;
 
     public Figur(){
         super();
     }
+}
 
-    public double getHeight() {
-        return height;
+/*    public void moveDown() {
+        if (this.getyPosition() < 600) {
+            this.yPosition += 30;
+        }
     }
 
-    public void setHeight(double height) {
-        this.height = height;
-    }
-
-    public double getWidth() {
-        return width;
-    }
-
-    public void setWidth(double width) {
-        this.width = width;
-    }
+    public abstract void draw(Canvas canvas);
 
 /*    public void moveDown(Canvas xSpielCanvas){
         int aktuelleZeit = LocalTime.now().getNano();
@@ -49,4 +42,4 @@ public class Figur {
         Violett: purpleBlock = rgb(238,130,238) #EE82EE hsl(300,76%,72%)
         Zyan:  cyanBlock = rgb(0,255,255) #00FFFF hsl(180,100%,50%)
      */
-}
+

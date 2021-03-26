@@ -2,24 +2,33 @@ package dxc.werkstatt;
 
 import javafx.scene.canvas.Canvas;
 
-import java.time.LocalTime;
-
 import static javafx.scene.paint.Color.CYAN;
 
-public class CyanBlock extends Figur {
+public class CyanBlock extends Block {
 
-    public CyanBlock(double xWidth, double xHeight){
-        this.width = xWidth;
-        this.height = xHeight;
+    public CyanBlock(double xxPosition, double yyPosition){
+        this.xPosition = xxPosition;
+        this.yPosition = yyPosition;
     }
 
-    public void drawCyanBlock(Canvas canvasSpielScene){
-    double height = 0;
-    double width = 90;
+    public void draw(Canvas xCanvasSpielScene){
+    /*this.xPosition = xxPosition;
+    double width = 90;*/
 
-    canvasSpielScene.getGraphicsContext2D().setFill(CYAN);
-    canvasSpielScene.getGraphicsContext2D().fillRect(width, height, 120, 30);
+    xCanvasSpielScene.getGraphicsContext2D().setFill(CYAN);
+    xCanvasSpielScene.getGraphicsContext2D().fillRect(xPosition, yPosition, 120, 30);
+    }
 }
+
+
+
+
+
+/*   public void removeCyanBlock(Canvas canvasSpielScene, double height){
+        this.xPosition = height;
+        double width = 90;
+
+        canvasSpielScene.getGraphicsContext2D().clearRect(width, height, 120, 30);*/
 
     /*public void moveDown(Canvas xSpielCanvas){
         int aktuelleZeit = 1;
@@ -33,4 +42,4 @@ public class CyanBlock extends Figur {
             }
         }
     }*/
-}
+

@@ -4,23 +4,22 @@ import javafx.scene.canvas.Canvas;
 
 import static javafx.scene.paint.Color.YELLOW;
 
-public class YellowBlock extends Figur{
-    double width2;
-    double height2;
+public class YellowBlock extends Block{
+    double yPosition2;
 
-    public YellowBlock(double xWidth, double xHeight, double xHeight2){
-        this.width = xWidth;
-        this.height = xHeight;
-        this.height2 = xHeight2;
+    public YellowBlock(double xxPosition, double yyPosition, double yyPosition2){
+        this.xPosition = xxPosition;
+        this.yPosition = yyPosition;
+        this.yPosition2 = yyPosition2;
     }
 
-    public void drawYellowBlock(Canvas xCanvasSpielScene){
+    public void draw(Canvas xCanvasSpielScene){
 /*        double height = 0;
         double width = 120;
         double height2 = height + 30;*/
 
         xCanvasSpielScene.getGraphicsContext2D().setFill(YELLOW);
-        xCanvasSpielScene.getGraphicsContext2D().fillRect(width, height, 60, 30);
-        xCanvasSpielScene.getGraphicsContext2D().fillRect(width, height2, 60, 30);
+        xCanvasSpielScene.getGraphicsContext2D().fillRect(xPosition, yPosition, 60, 30);
+        xCanvasSpielScene.getGraphicsContext2D().fillRect(xPosition, yPosition2, 60, 30);
     }
 }
