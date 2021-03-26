@@ -23,7 +23,7 @@ public class CanvasAnimationTimer extends AnimationTimer {
     public void handle(long now){
         canvas.getGraphicsContext2D().clearRect(0,0, canvas.getWidth(), canvas.getHeight());
         f.drawFigur(canvas, CYAN);
-        if (f.block4.yPosition < canvas.getHeight())
+        if (f.block4.yPosition < canvas.getHeight() - 30)
         {
             if (now - zeit > 500000000)
             {
