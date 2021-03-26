@@ -2,8 +2,9 @@ package dxc.werkstatt;
 
 
 import javafx.scene.canvas.Canvas;
+import javafx.scene.paint.Color;
 
-public class Figur {
+public abstract class Figur {
     Block block1;
     Block block2;
     Block block3;
@@ -11,6 +12,34 @@ public class Figur {
 
     public Figur(){
         super();
+    }
+
+    public void fallDown(){
+        block1.yPosition += 30;
+        block2.yPosition += 30;
+        block3.yPosition += 30;
+        block4.yPosition += 30;
+    }
+
+    public void drawFigur(Canvas xCanvas, Color xColor){
+        block1.drawBlock(xCanvas, xColor);
+        block2.drawBlock(xCanvas, xColor);
+        block3.drawBlock(xCanvas, xColor);
+        block4.drawBlock(xCanvas, xColor);
+    }
+
+    public void moveRight(){
+        block1.xPosition += 30;
+        block2.xPosition += 30;
+        block3.xPosition += 30;
+        block4.xPosition += 30;
+    }
+
+    public void moveleft(){
+        block1.xPosition -= 30;
+        block2.xPosition -= 30;
+        block3.xPosition -= 30;
+        block4.xPosition -= 30;
     }
 }
 

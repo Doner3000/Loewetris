@@ -7,6 +7,8 @@ import java.time.LocalTime;
 import java.util.Timer;
 import java.util.TimerTask;
 
+import static javafx.scene.paint.Color.CYAN;
+
 public class CanvasAnimationTimer extends AnimationTimer {
 
     private final Canvas canvas;
@@ -19,11 +21,15 @@ public class CanvasAnimationTimer extends AnimationTimer {
     }
     @Override
     public void handle(long now){
-        if (now - zeit > 1000000000) {
-            canvas.getGraphicsContext2D().clearRect(0,0, canvas.getWidth(), canvas.getHeight());
-            f.draw(canvas);
-            f.moveDown();
-            zeit = now;
+        canvas.getGraphicsContext2D().clearRect(0,0, canvas.getWidth(), canvas.getHeight());
+        f.drawFigur(canvas, CYAN);
+        if (f.block4.yPosition < canvas.getHeight())
+        {
+            if (now - zeit > 500000000)
+            {
+                f.fallDown();
+                zeit = now;
+            }
         }
     }
 

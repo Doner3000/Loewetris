@@ -1,8 +1,27 @@
 package dxc.werkstatt;
 
-public abstract class Block {
-    public double width = 30;
-    public double height = 30;
+import javafx.scene.canvas.Canvas;
+import javafx.scene.paint.Color;
+
+public class Block {
+    public double width;
+    public double height;
     public double xPosition;
     public double yPosition;
+
+
+    public Block(double x, double y){
+        width = 30;
+        height = 30;
+       this.xPosition = x;
+       this.yPosition = y;
+    }
+
+    public void drawBlock(Canvas xCanvasSpielScene, Color color){
+        xCanvasSpielScene.getGraphicsContext2D().setFill(color);
+        xCanvasSpielScene.getGraphicsContext2D().fillRect(xPosition, yPosition, width, height);
+    }
 }
+
+
+
