@@ -1,8 +1,10 @@
 package dxc.werkstatt;
 
+import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.input.KeyEvent;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -57,10 +59,14 @@ public class SceneManager {
         ersteStage.show();
     }
 
+    public void eventAdd(SceneEnum scene, EventHandler<KeyEvent> eh){
+        sceneMap.get(scene).setOnKeyPressed(eh);
+    }
+
     public void setPrimaryStage(Stage ersteStage){
         this.ersteStage = ersteStage;
     }
-    public Object getController(String sceneKey){
+    public Object getController(SceneEnum sceneKey){
         return controllerMap.get(sceneKey);
     }
 }

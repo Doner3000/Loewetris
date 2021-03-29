@@ -1,6 +1,7 @@
 package dxc.werkstatt;
 
 import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -28,6 +29,8 @@ public class StartSceneController {
     void btnStartPressed(ActionEvent event)
     {
         SceneManager.getInstance().showScene(SceneEnum.SPIEL_SCENE);
+        SceneManager.getInstance().eventAdd(SceneEnum.SPIEL_SCENE, ((SpielController) SceneManager.getInstance().getController(SceneEnum.SPIEL_SCENE))::keyTyped);
+
     }
 
     @FXML

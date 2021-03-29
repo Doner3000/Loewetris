@@ -2,23 +2,30 @@ package dxc.werkstatt;
 
 import javafx.animation.AnimationTimer;
 import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.scene.Scene;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.input.KeyCode;
+import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
 
+import java.security.Key;
 import java.util.Timer;
 
 import static javafx.scene.paint.Color.*;
+import java.awt.*;
+import java.awt.event.*;
 
 public class SpielController {
 
     private int score;
+    private CanvasAnimationTimer ant;
 
 
     @FXML
@@ -41,6 +48,12 @@ public class SpielController {
         SceneManager.getInstance().showScene(SceneEnum.START_SCENE);
     }
 
+    @FXML
+    void keyTyped(KeyEvent event){
+        ant.move(event);
+        System.out.println(event);
+    }
+
 
     @FXML
     private void initialize() throws InterruptedException {
@@ -53,9 +66,13 @@ public class SpielController {
 //        YellowBlock.drawYellowBlock(canvasSpielScene);
 //        YellowBlock Pascal = new YellowBlock(120, 0, 30);
 //        Pascal.drawYellowBlock(canvasSpielScene);
-        CanvasAnimationTimer ant = new CanvasAnimationTimer(canvasSpielScene);
+        ant = new CanvasAnimationTimer(canvasSpielScene);
         ant.start();
+
+
         //test.moveDown(canvasSpielScene);
     }
+
+
 }
 

@@ -21,6 +21,9 @@ public class Block {
         xCanvasSpielScene.getGraphicsContext2D().setFill(color);
         xCanvasSpielScene.getGraphicsContext2D().fillRect(xPosition, yPosition, width, height);
     }
+    public void removeBlock(Canvas xCanvasSpielScene){
+        xCanvasSpielScene.getGraphicsContext2D().clearRect(xPosition, yPosition - 30, width, height);
+    }
 }
 
 

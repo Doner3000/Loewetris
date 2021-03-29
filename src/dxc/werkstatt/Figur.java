@@ -1,7 +1,10 @@
 package dxc.werkstatt;
 
 
+import javafx.event.EventHandler;
 import javafx.scene.canvas.Canvas;
+import javafx.scene.input.KeyCode;
+import javafx.scene.input.KeyEvent;
 import javafx.scene.paint.Color;
 
 public abstract class Figur {
@@ -9,6 +12,7 @@ public abstract class Figur {
     Block block2;
     Block block3;
     Block block4;
+    Color farbe;
 
     public Figur(){
         super();
@@ -21,25 +25,42 @@ public abstract class Figur {
         block4.yPosition += 30;
     }
 
-    public void drawFigur(Canvas xCanvas, Color xColor){
-        block1.drawBlock(xCanvas, xColor);
-        block2.drawBlock(xCanvas, xColor);
-        block3.drawBlock(xCanvas, xColor);
-        block4.drawBlock(xCanvas, xColor);
+    public void drawFigur(Canvas xCanvas){
+        block1.drawBlock(xCanvas, farbe);
+        block2.drawBlock(xCanvas, farbe);
+        block3.drawBlock(xCanvas, farbe);
+        block4.drawBlock(xCanvas, farbe);
     }
 
-    public void moveRight(){
+    public void removeFigur(Canvas xCanvas){
+        xCanvas.getGraphicsContext2D().clearRect(block1.xPosition, block1.yPosition - 30, block1.width, block1.width);
+        xCanvas.getGraphicsContext2D().clearRect(block2.xPosition, block2.yPosition - 30, block2.width, block2.width);
+        xCanvas.getGraphicsContext2D().clearRect(block3.xPosition, block3.yPosition - 30, block3.width, block3.width);
+        xCanvas.getGraphicsContext2D().clearRect(block4.xPosition, block4.yPosition - 30 , block4.width, block4.width);
+    }
+
+    public void moveRight(Canvas xCanvas){
         block1.xPosition += 30;
         block2.xPosition += 30;
         block3.xPosition += 30;
         block4.xPosition += 30;
+        xCanvas.getGraphicsContext2D().clearRect(block1.xPosition - 30, block1.yPosition - 30, block1.width, block1.width);
+        xCanvas.getGraphicsContext2D().clearRect(block2.xPosition - 30, block2.yPosition - 30, block2.width, block2.width);
+        xCanvas.getGraphicsContext2D().clearRect(block3.xPosition - 30, block3.yPosition - 30, block3.width, block3.width);
+        xCanvas.getGraphicsContext2D().clearRect(block4.xPosition - 30, block4.yPosition - 30 , block4.width, block4.width);
+        this.drawFigur(xCanvas);
     }
 
-    public void moveleft(){
+    public void moveleft(Canvas xCanvas){
         block1.xPosition -= 30;
         block2.xPosition -= 30;
         block3.xPosition -= 30;
         block4.xPosition -= 30;
+        xCanvas.getGraphicsContext2D().clearRect(block1.xPosition + 30, block1.yPosition - 30, block1.width, block1.width);
+        xCanvas.getGraphicsContext2D().clearRect(block2.xPosition + 30, block2.yPosition - 30, block2.width, block2.width);
+        xCanvas.getGraphicsContext2D().clearRect(block3.xPosition + 30, block3.yPosition - 30, block3.width, block3.width);
+        xCanvas.getGraphicsContext2D().clearRect(block4.xPosition + 30, block4.yPosition - 30 , block4.width, block4.width);
+        this.drawFigur(xCanvas);
     }
 }
 

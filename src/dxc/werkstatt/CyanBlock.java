@@ -11,17 +11,9 @@ public class CyanBlock extends Figur {
         this.block2 = new Block(x + 30, y);
         this.block3 = new Block(x + 60, y);
         this.block4 = new Block(x + 90, y);
+        this.farbe = CYAN;
     }
 }
-
-/*    public void drawCyan(Canvas xCanvasSpielScene){
-    xCanvasSpielScene.getGraphicsContext2D().setFill(CYAN);
-    xCanvasSpielScene.getGraphicsContext2D().fillRect(block1.xPosition, block1.yPosition, 30, 30);
-    xCanvasSpielScene.getGraphicsContext2D().fillRect(block2.xPosition, block2.yPosition, 30, 30);
-    xCanvasSpielScene.getGraphicsContext2D().fillRect(block3.xPosition, block3.yPosition, 30, 30);
-    xCanvasSpielScene.getGraphicsContext2D().fillRect(block4.xPosition, block4.yPosition, 30, 30);
-    }*/
-
 
 
 
